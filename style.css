@@ -1,0 +1,179 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0 1rem;
+  display: grid;
+  place-items: center;
+ 
+  min-height: 100vh;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+.container{
+  max-width: 576px;
+}
+
+.result-card{
+  padding: 1.5rem 0;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+.title{
+  color: hsl(241, 100%, 89%);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.score{
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1) , hsla(241, 72%, 46%, 0));
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.score p{
+  font-size: 0.8rem;
+  text-align: center;
+  color:hsl(241, 100%, 89%);
+  
+}
+span{
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+ 
+}
+.remarks{
+  text-align: center;
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+
+}
+h2{
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+
+}
+.remarks p{
+  color:hsl(241, 100%, 89%) ;
+  font-size: 0.8rem;
+  line-height: 150%;
+  font-weight: 600;
+
+}
+
+/* summary section */
+.stats-card h3{
+  color: hsl(224, 30%, 27%);
+}
+
+
+
+.stats-card{
+  padding: 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.stats{
+  
+  display: grid;
+  gap: 0.8rem;
+}
+
+.stat-grid{
+  background-color:hsla(0, 100%, 67%, 0.11) ;
+  padding: 0 1rem;
+  display:grid;
+  place-content: center;
+  place-items: end;
+  grid-template-columns: 0.1fr 0.2fr 1fr;
+  gap: 1rem;
+  min-height: 48px;
+  border-radius: 0.5rem;
+  font-size:0.9rem;
+}
+.stat-1{
+  background-color: hsla(0, 100%, 67%, 0.103);
+  color: hsl(0, 100%, 67%);
+
+}
+
+.stat-2{
+  background-color:hsla(39, 100%, 56%, 0.11) ;
+  color: hsl(39, 100%, 56%);
+}
+
+.stat-3{
+  background-color:hsla(166, 100%, 37%, 0.11);
+  color:hsl(166, 100%, 37%);
+}
+.stat-4{
+  background-color:hsla(234, 85%, 45%, 0.103);
+  color:hsl(234, 85%, 45%);
+
+}
+
+.stat-grid p:nth-child(3){
+  color: hsl(224, 30%, 27%);
+}
+button{
+  border: none;
+  background: linear-gradient(to bottom, hsl(224, 30%, 27%),hsl(224, 30%, 27%));
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  border-radius: 2rem;
+  transition: 500ms;
+  cursor: pointer;
+}
+button:hover{
+  background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1) , hsla(241, 72%, 46%, 1));
+}
+
+
+/* large devices */
+
+@media(min-width:992px){
+  .container{
+    background-color: white;
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-radius:1rem;
+    
+
+    
+  }
+
+  .result-card{
+    border-radius: 1.5rem;
+  
+    justify-content: space-evenly;
+  }
+
+  .stats-card{
+    background-color: white;
+    box-shadow: 4px 8px 16px hsla(240, 17%, 72%, 0.397);
+    border-radius: 0px 1.5rem 1.5rem 0px; 
+  }
+}
+
+
+
+  
